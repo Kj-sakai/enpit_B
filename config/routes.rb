@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  #resources :books
-  resources :welcome do
-   resources :public_html
-end
-
+  resources :books
 #add 2014/11/08
   #resources :UIBB
   # The priority is based upon order of creation: first created -> highest priority.
