@@ -19,9 +19,12 @@ module EnpitB
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-  end
-end
+ 
+
 # add 2014/11/08
 config.action_dispatch.default_headers = {
  'X-Frame-Options' => 'ALLOWALL'
 }
+end
+end
+
