@@ -1,0 +1,53 @@
+<%= form_for(@videolist) do |f| %>
+  <% if @videolist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@videolist.errors.count, "error") %> prohibited this videolist from being saved:</h2>
+
+      <ul>
+      <% @videolist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :videoid %><br>
+    <%= f.text_field :videoid %>
+  </div>
+  <div class="field">
+    <%= f.label :videoURL %><br>
+    <%= f.text_field :videoURL %>
+  </div>
+  <div class="field">
+    <%= f.label :flag %><br>
+    <%= f.check_box :flag %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :uptime %><br>
+    <%= f.datetime_select :uptime %>
+  </div>
+  <div class="field">
+    <%= f.label :tag %><br>
+    <%= f.text_area :tag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

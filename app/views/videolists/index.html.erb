@@ -1,0 +1,41 @@
+<h1>Listing videolists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Videoid</th>
+      <th>Videourl</th>
+      <th>Flag</th>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Author</th>
+      <th>Description</th>
+      <th>Uptime</th>
+      <th>Tag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videolists.each do |videolist| %>
+      <tr>
+        <td><%= videolist.videoid %></td>
+        <td><%= videolist.videoURL %></td>
+        <td><%= videolist.flag %></td>
+        <td><%= videolist.title %></td>
+        <td><%= videolist.category %></td>
+        <td><%= videolist.author %></td>
+        <td><%= videolist.description %></td>
+        <td><%= videolist.uptime %></td>
+        <td><%= videolist.tag %></td>
+        <td><%= link_to 'Show', videolist %></td>
+        <td><%= link_to 'Edit', edit_videolist_path(videolist) %></td>
+        <td><%= link_to 'Destroy', videolist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Videolist', new_videolist_path %>

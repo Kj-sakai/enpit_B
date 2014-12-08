@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Videoid:</strong>
+  <%= @videolist.videoid %>
+</p>
+
+<p>
+  <strong>Videourl:</strong>
+  <%= @videolist.videoURL %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @videolist.flag %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @videolist.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @videolist.category %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @videolist.author %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @videolist.description %>
+</p>
+
+<p>
+  <strong>Uptime:</strong>
+  <%= @videolist.uptime %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @videolist.tag %>
+</p>
+
+<%= link_to 'Edit', edit_videolist_path(@videolist) %> |
+<%= link_to 'Back', videolists_path %>
