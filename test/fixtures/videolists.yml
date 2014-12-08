@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  videoid: MyString
+  videoURL: MyString
+  flag: false
+  title: MyString
+  category: MyString
+  author: MyString
+  description: MyText
+  uptime: 2014-12-08 11:31:47
+  tag: MyText
+
+two:
+  videoid: MyString
+  videoURL: MyString
+  flag: false
+  title: MyString
+  category: MyString
+  author: MyString
+  description: MyText
+  uptime: 2014-12-08 11:31:47
+  tag: MyText

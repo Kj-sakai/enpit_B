@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :videolists
 
-  #resources :books
+  resources :books
 #add 2014/11/08
   #resources :uibb
   # The priority is based upon order of creation: first created -> highest priority.
